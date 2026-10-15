@@ -1,0 +1,23 @@
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Python virtual environment and cache
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+node_modules/

@@ -1,0 +1,245 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #203b2d;
+  background: #ffffff;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border: none;
+  display: block;
+}
+
+.hero {
+  width: 100%;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  color: #ffffff;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(13, 39, 29, 0.85),
+      rgba(13, 39, 29, 0.25)
+    ),
+    url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=85");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 650px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #e0f4e7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: normal;
+}
+
+.hero h1 span {
+  display: block;
+  color: #b6e4c7;
+}
+
+.hero-description {
+  max-width: 490px;
+  margin: 0;
+  color: #f0f5f1;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 22px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #204b36;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background: #dff4e6;
+}
+
+.destinations {
+  width: 100%;
+  padding: 60px 8%;
+  background: #ffffff;
+}
+
+.section-label {
+  margin: 0 0 12px;
+  color: #39885b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.destinations h2 {
+  margin: 0 0 12px;
+  color: #203b2d;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.destinations > p:last-of-type {
+  margin: 0;
+  color: #748078;
+  line-height: 1.7;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.destination-card {
+  overflow: hidden;
+  border: 1px solid #e6ece6;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.destination-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content span {
+  color: #39885b;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 23px;
+}
+
+.card-content p {
+  margin: 0;
+  color: #748078;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 480px;
+    padding: 50px 6%;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destinations {
+    padding: 45px 6%;
+  }
+  
+/* TripMate hero layout override */
+main {
+  width: 100%;
+}
+
+.hero {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 600px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 70px 8% !important;
+  color: white !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13, 39, 29, 0.85),
+      rgba(13, 39, 29, 0.2)
+    ),
+    url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=85")
+      center / cover no-repeat !important;
+}
+
+.hero-content {
+  width: 100% !important;
+  max-width: 650px !important;
+  text-align: left !important;
+}
+
+.hero .eyebrow {
+  color: #e0f4e7 !important;
+}
+
+.hero h1 {
+  margin: 24px 0 !important;
+  color: white !important;
+  font-size: clamp(44px, 6vw, 72px) !important;
+  line-height: 1.15 !important;
+  letter-spacing: normal !important;
+}
+
+.hero h1 span {
+  display: block !important;
+  color: #b6e4c7 !important;
+}
+
+.hero .hero-description {
+  color: #f0f5f1 !important;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 480px !important;
+    padding: 40px 6% !important;
+  }
+}
+
+}
