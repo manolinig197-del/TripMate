@@ -322,7 +322,7 @@ function App() {
 ];
   async function fetchDestinations() {
     try {
-      const response = await fetch("http://127.0.0.1:8000/destinations");
+      const response = await fetch("https://tripmate-backend-nw10.onrender.com/destinations");
       const data = await response.json();
       setBackendDestinations(data.destinations);
       console.log("Destinations loaded:", data.destinations);
